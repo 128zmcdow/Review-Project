@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Website</title>
+    <title>Paws & Hearts</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .card-img-top {
             height: 200px;
@@ -17,45 +17,148 @@
     </style>
 </head>
 
-<body class="bg-primary text-white">
+<body class="text-white">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Paws & Hearts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adopt a Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-primary" type="submit">Donate Now</button>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container-fluid p-5">
-        <h1 class="text-center mb-5">Find Your Perfect Companion</h1>
-        <h2 class="mb-4">Dogs Section</h2>
-        <div class="row mb-5">
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card h-100">
-                    <img src="img/puppy.jpg" class="card-img-top" alt="dog">
-                    <div class="card-body">
-                        <h5 class="card-title">Dog</h5>
-                        <p class="card-text">Dog</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
+    <section id="home" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="mb-4">Find Your Perfect Companion</h1>
+                    <p>Every pet deserves a loving home. Help us connect abandoned animals with caring families.</p>
+                    <br>
+                    <button type="button" class="btn btn-light">Adopt Now</button>
+                    <button type="button" class="btn btn-outline-light">Learn More</button>
+                </div>
+                <div class="col-6">
+                    <img src="img/splash-image.jpg" alt="dog" height="500px" width="700px">
                 </div>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card h-100">
-                    <img src="img/kitty02.jpg" class="card-img-top" alt="dog">
-                    <div class="card-body">
-                        <h5 class="card-title">Cat 1</h5>
-                        <p class="card-text">Cat 1</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <section id="Adopt A Pet" class="py-5 bg-light text-dark">
+        <h1 class="text-center">Featured Pets</h1>
+        <p class="text-center">These adorable animals are looking for their forever homes. Could one of them be perfect for your family?</p>
+        <div class="container-fluid p-5">
+            <div class="row mb-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/puppy.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Buddy</h5>
+                            <p class="card-text">2 years old - Beagle - Male <br><br> Energetic and friendly. </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card h-100">
-                    <img src="img/kitty01.jpg" class="card-img-top" alt="dog">
-                    <div class="card-body">
-                        <h5 class="card-title">Cat 2</h5>
-                        <p class="card-text">Cat 2</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/kitty02.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna</h5>
+                            <p class="card-text">3 years old - Persian - Female <br><br> Calm and affectionate. </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/kitty01.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Milo</h5>
+                            <p class="card-text">6 months old - Tabby - Male <br><br> Playful kitten who loves toys and climbing cat trees.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <section id="Adopt A Pet" class="py-5 bg-light text-dark">
+        <h1 class="text-center">Adopt a Pet</h1>
+        <p class="text-center">Browse our available animals and find your new best friend. Each pet has been health-checked and is ready for adoption.</p>
+        <div class="container-fluid p-5">
+            <div class="row mb-5">
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/dog01.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Max</h5>
+                            <p class="card-text">4 years - Labrador - Male <br><br> Great with kids, house-trained, loves walks and cuddles. </p>
+                            <a href="#" class="btn btn-primary">Meet Max</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/kitty04.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Bella</h5>
+                            <p class="card-text">2 years - Siamese - Female <br><br> Independent, loves sunbathing, good with other cats. </p>
+                            <a href="#" class="btn btn-primary">Meet Bella</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/dog02.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Charlie</h5>
+                            <p class="card-text">3 years - Border Collie - Male <br><br> Highly intelligent, needs active family, loves frisbee.</p>
+                            <a href="#" class="btn btn-primary">Meet Charlie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <img src="img/kitty03.jpg" class="card-img-top" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Ginger</h5>
+                            <p class="card-text">1 year - Tabby - Female <br><br> Playful, loves toys, perfect for first-time cat owners.</p>
+                            <a href="#" class="btn btn-primary">Meet Ginger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2026 Paws & Hearts Animal Shelter. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
