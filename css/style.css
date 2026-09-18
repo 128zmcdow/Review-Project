@@ -1,3 +1,7 @@
 body {
     background-color: #882ef0;
 }
+
+.bg-body-light {
+    background-color: rgb(240, 238, 238);
+}
